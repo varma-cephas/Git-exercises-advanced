@@ -44,3 +44,45 @@ gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git add test4.md && git co
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 test4.md
 ```
+
+### Exercise 2
+
+```bash
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git rebase -i HEAD~4    
+[detached HEAD 526a705] chore: Create second file
+ Date: Wed Feb 26 11:22:07 2025 +0200
+ Committer: Gym Ubutwari <gymubutwari@Ubutwaris-iMac-2.local>
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test2.md
+Successfully rebased and updated refs/heads/main.
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git log
+commit bc0a685ba4cc11850029db1109dc12914a33e657 (HEAD -> main)
+Author: Gym Ubutwari <gymubutwari@Ubutwaris-iMac-2.local>
+Date:   Wed Feb 26 11:31:25 2025 +0200
+
+    chore: Add forgotten fourth file to commit history
+
+commit 66a247b3ce7eb9baf3ace4af9632c6c66ee5dfeb
+Author: Gym Ubutwari <gymubutwari@Ubutwaris-iMac-2.local>
+Date:   Wed Feb 26 11:22:07 2025 +0200
+
+    chore: Create third and fourth files
+
+commit 526a7055ab1fd66ffd8c3446063a5a5e17accd60
+Author: Gym Ubutwari <gymubutwari@Ubutwaris-iMac-2.local>
+Date:   Wed Feb 26 11:22:07 2025 +0200
+
+    chore: Create second file
+
+commit c317a40fdea2d296cea3eedae386d3c2004c0171
+Author: Gym Ubutwari <gymubutwari@Ubutwaris-iMac-2.local>
+Date:   Wed Feb 26 11:22:07 2025 +0200
+
+    chore: Create initial file
+
+commit 470d6fc1c658fb4d9702a9adc7fecd16b0a7cc25 (origin/main, origin/HEAD)
+Author: Varma Cephas <varmac231@gmail.com>
+Date:   Tue Feb 25 19:07:45 2025 +0200
+
+    Initial commit
+```
