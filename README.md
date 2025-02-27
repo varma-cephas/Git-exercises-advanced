@@ -618,3 +618,12 @@ d28dc2a HEAD@{79}: commit: chore: Create another file
 
 with the above information on commit messages, hashes, pointers and more. with all of those information we can git cherry-pick, git merge or git checkout to retrieve lost changes and reintegrage them into our main history.
 ```
+
+## Part 2
+
+
+### Exercise 1
+```bash
+pop-os% git checkout -b ft/new-feature
+Switched to a new branch 'ft/new-feature'
+```
