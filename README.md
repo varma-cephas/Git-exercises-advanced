@@ -623,12 +623,14 @@ with the above information on commit messages, hashes, pointers and more. with a
 
 
 ### Exercise 1
+
 ```bash
 pop-os% git checkout -b ft/new-feature
 Switched to a new branch 'ft/new-feature'
 ```
 
 ### Exercise 2
+
 ```bash
 pop-os% git checkout ft/new-feature 
 Switched to branch 'ft/new-feature'
@@ -637,4 +639,23 @@ pop-os% git add feature.txt; git commit -m "feat: Implemented core functionality
 [ft/new-feature 0e62d47] feat: Implemented core functionality for new feature
  1 file changed, 1 insertion(+)
  create mode 100644 feature.txt
+```
+
+### Exercise 3
+
+```bash
+pop-os% git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+pop-os% nano readme.txt
+pop-os% git add readme.txt; git commit -m "Updated project readme"                
+[main bc51b14] Updated project readme
+ 1 file changed, 1 insertion(+)
+ create mode 100644 readme.txt
+pop-os% git rebase -i HEAD~                                       
+[detached HEAD 692a5bd] chore: Updated project readme
+ Date: Thu Feb 27 22:07:05 2025 +0200
+ 1 file changed, 1 insertion(+)
+ create mode 100644 readme.txt
+Successfully rebased and updated refs/heads/main.
 ```
