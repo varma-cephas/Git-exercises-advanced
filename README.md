@@ -528,3 +528,93 @@ pop-os% git log --all --decorate --oneline --graph
 * 7baad55 chore: add log for exercise 1
 * 470d6fc Initial commit
 ```
+
+### Exercise 10
+
+```bash
+pop-os% git reflog
+3445457 (HEAD -> main, origin/main, origin/HEAD) HEAD@{0}: commit: docs: Add solution for Part 1 exercise 9
+8d4e590 HEAD@{1}: commit: docs: Add solution for Part 1 exercise 8
+af2c733 HEAD@{2}: cherry-pick: feat: Implemented test 5
+2e6adb3 HEAD@{3}: checkout: moving from ft/branch to main
+44df466 (ft/branch) HEAD@{4}: checkout: moving from main to ft/branch
+2e6adb3 HEAD@{5}: checkout: moving from ft/branch to main
+44df466 (ft/branch) HEAD@{6}: commit: feat: Implemented test 5
+2e6adb3 HEAD@{7}: checkout: moving from main to ft/branch
+2e6adb3 HEAD@{8}: commit: docs: Add solution for Part 1 exercise 7
+f3485de HEAD@{9}: rebase (finish): returning to refs/heads/main
+f3485de HEAD@{10}: rebase (pick): docs: Add solution for Part 1 exercise 6
+fb42e6e HEAD@{11}: rebase (pick): chore: Squashed Create fifth and sixth file
+ecbfbca HEAD@{12}: rebase (pick): docs: Add solution for Part 1 exercise 5
+ed2a7fa HEAD@{13}: rebase (pick): chore: Add solution for Part 1 exercise 4
+1cadb57 HEAD@{14}: rebase (start): checkout HEAD~4
+9ce11c7 HEAD@{15}: commit: docs: Add solution for Part 1 exercise 6
+8b487ec HEAD@{16}: rebase (finish): returning to refs/heads/main
+8b487ec HEAD@{17}: rebase (start): checkout HEAD~2
+a95b60a HEAD@{18}: commit: chore: Unwanted commit
+8b487ec HEAD@{19}: commit: docs: Add solution for Part 1 exercise 5
+6dfab1b HEAD@{20}: rebase (finish): returning to refs/heads/main
+6dfab1b HEAD@{21}: rebase (pick): chore: Add solution for Part 1 exercise 4
+de78864 HEAD@{22}: rebase (squash): chore: Squashed Create fifth and sixth file
+7fb3233 HEAD@{23}: rebase (start): checkout HEAD~3
+4e8070b HEAD@{24}: rebase (finish): returning to refs/heads/main
+4e8070b HEAD@{25}: rebase (start): checkout HEAD~6
+4e8070b HEAD@{26}: commit: chore: Add solution for Part 1 exercise 4
+cdeffa3 HEAD@{27}: rebase (continue) (finish): returning to refs/heads/main
+cdeffa3 HEAD@{28}: commit: chore: Create sixth file
+7fb3233 HEAD@{29}: commit: chore: Create fifth file
+1cadb57 HEAD@{30}: reset: moving to HEAD~
+3f1ef2b HEAD@{31}: rebase: fast-forward
+1cadb57 HEAD@{32}: rebase (start): checkout HEAD~
+3f1ef2b HEAD@{33}: rebase (finish): returning to refs/heads/main
+3f1ef2b HEAD@{34}: rebase (start): checkout HEAD
+3f1ef2b HEAD@{35}: commit: chore: Create fifth and sixth file
+1cadb57 HEAD@{36}: rebase (finish): returning to refs/heads/main
+1cadb57 HEAD@{37}: rebase (start): checkout HEAD~5
+1cadb57 HEAD@{38}: rebase (finish): returning to refs/heads/main
+1cadb57 HEAD@{39}: rebase (start): checkout HEAD~4
+1cadb57 HEAD@{40}: rebase (finish): returning to refs/heads/main
+1cadb57 HEAD@{41}: rebase (pick): chore: Add exercise 3 completed solution to README
+094b580 HEAD@{42}: rebase (pick): chore: Add forgotten fourth file to commit history
+627e0c5 HEAD@{43}: rebase (squash): chore: Squashed "Create second file" commit into "Create initial file" commit for a cleaner history. -- patch contents already upstream
+8b8089f HEAD@{44}: rebase (start): checkout HEAD~4
+7322f6b HEAD@{45}: pull origin main --rebase (finish): returning to refs/heads/main
+7322f6b HEAD@{46}: pull origin main --rebase (pick): chore: Add exercise 3 completed solution to README
+3e439b7 HEAD@{47}: pull origin main --rebase (start): checkout 3e439b764eecfba793a5eb3995d6317dbf49c82b
+fa6ec23 HEAD@{48}: rebase (finish): returning to refs/heads/main
+fa6ec23 HEAD@{49}: rebase (pick): chore: Add exercise 3 completed solution to README
+e8f1048 HEAD@{50}: rebase (pick): chore: Add forgotten fourth file to commit history
+03cdfe9 HEAD@{51}: rebase (squash): chore: Squashed "Create second file" commit into "Create initial file" commit for a cleaner history. -- patch contents already upstream
+8b8089f HEAD@{52}: rebase (start): checkout HEAD~4
+924d2ba HEAD@{53}: rebase (finish): returning to refs/heads/main
+924d2ba HEAD@{54}: rebase (start): checkout HEAD~4
+924d2ba HEAD@{55}: pull origin main --rebase (finish): returning to refs/heads/main
+924d2ba HEAD@{56}: pull origin main --rebase (pick): chore: Add exercise 3 completed solution to README
+3e439b7 HEAD@{57}: pull origin main --rebase (start): checkout 3e439b764eecfba793a5eb3995d6317dbf49c82b
+a5663f3 HEAD@{58}: commit: chore: Add exercise 3 completed solution to README
+69293ec HEAD@{59}: rebase (finish): returning to refs/heads/main
+69293ec HEAD@{60}: rebase (pick): chore: Add forgotten fourth file to commit history
+b1420ff HEAD@{61}: rebase (pick): chore: Create third and fourth files
+d5e95ce HEAD@{62}: rebase (reword): chore: Squashed "Create second file" commit into "Create initial file" commit for a cleaner history.
+5986273 HEAD@{63}: rebase: fast-forward
+4dbf45d HEAD@{64}: rebase (start): checkout HEAD~4
+c362399 HEAD@{65}: rebase (finish): returning to refs/heads/main
+c362399 HEAD@{66}: rebase (pick): chore: Add forgotten fourth file to commit history
+6227f1e HEAD@{67}: rebase (pick): chore: Create third and fourth files
+5986273 HEAD@{68}: rebase (squash): chore: Squashed "Create second file" commit into "Create initial file" commit for a cleaner history.
+6c787d2 HEAD@{69}: rebase (start): checkout HEAD~4
+3e439b7 HEAD@{70}: rebase (abort): updating HEAD
+4dbf45d HEAD@{71}: rebase (start): checkout HEAD~4
+3e439b7 HEAD@{72}: pull origin main --rebase (finish): returning to refs/heads/main
+3e439b7 HEAD@{73}: pull origin main --rebase (start): checkout 3e439b764eecfba793a5eb3995d6317dbf49c82b
+9bc70ba HEAD@{74}: commit: chore: Create third and fourth files
+fe51158 HEAD@{75}: commit: chore: Create another file
+08916a6 HEAD@{76}: commit: chore: Create initial file
+470d6fc HEAD@{77}: reset: moving to 470d6fc1c658fb4d9702a9adc7fecd16b0a7cc25
+d28dc2a HEAD@{78}: reset: moving to HEAD
+d28dc2a HEAD@{79}: commit: chore: Create another file
+1440d1a HEAD@{80}: commit: chore: Create initial file
+470d6fc HEAD@{81}: clone: from github.com:varma-cephas/Git-exercises-advanced.git
+
+with the above information on commit messages, hashes, pointers and more. with all of those information we can git cherry-pick, git merge or git checkout to retrieve lost changes and reintegrage them into our main history.
+```
