@@ -86,3 +86,16 @@ Date:   Tue Feb 25 19:07:45 2025 +0200
 
     Initial commit
 ```
+
+### Exercise 3
+
+```bash
+pop-os% git rebase -i HEAD~4  
+[detached HEAD 5986273] chore: Squashed "Create second file" commit into "Create initial file" commit for a cleaner history. chore: Create initial file
+ Author: Gym Ubutwari <gymubutwari@Ubutwaris-iMac-2.local>
+ Date: Wed Feb 26 11:22:07 2025 +0200
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test1.md
+ create mode 100644 test2.md
+Successfully rebased and updated refs/heads/main.
+```
