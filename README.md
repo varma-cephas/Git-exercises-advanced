@@ -678,3 +678,10 @@ remote:
 To github.com:varma-cephas/Git-exercises-advanced.git
  * [new branch]      ft/new-feature -> ft/new-feature
 ```
+
+### Exercise 5
+
+```bash
+pop-os% git branch -d ft/new-feature
+Deleted branch ft/new-feature (was 0e62d47).
+```
