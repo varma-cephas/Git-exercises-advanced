@@ -326,3 +326,183 @@ Date:   Tue Feb 25 19:07:45 2025 +0200
     Initial commit
 
 ```
+
+### Exercise 8
+
+```bash
+pop-os% git checkout ft/branch 
+Switched to branch 'ft/branch'
+pop-os% git log
+commit 44df4661da39e1c11f37afb2c0e444745283cc34 (HEAD -> ft/branch)
+Author: Varma Cephas <varmac231@gmail.com>
+Date:   Thu Feb 27 16:28:32 2025 +0200
+
+    feat: Implemented test 5
+
+commit 2e6adb319b8135aa5791a29d284eb738ef60e938 (origin/main, origin/HEAD, main)
+Author: Varma Cephas <varmac231@gmail.com>
+Date:   Thu Feb 27 16:19:19 2025 +0200
+
+    docs: Add solution for Part 1 exercise 7
+
+commit f3485dec9565f6962b6e0e88d4c4b97d276c6c38
+Author: Varma Cephas <varmac231@gmail.com>
+Date:   Thu Feb 27 16:03:35 2025 +0200
+
+    docs: Add solution for Part 1 exercise 6
+
+commit fb42e6ef4467f3779e41a61c1f9632065af4141d
+Author: Varma Cephas <varmac231@gmail.com>
+Date:   Thu Feb 27 15:29:50 2025 +0200
+
+    chore: Squashed Create fifth and sixth file
+    chore: Create fifth file
+    
+    chore: Create sixth file
+
+commit ecbfbca56e0b5cfe23bb4fb0fbe86167b5c06050
+Author: Varma Cephas <varmac231@gmail.com>
+Date:   Thu Feb 27 15:44:18 2025 +0200
+
+    docs: Add solution for Part 1 exercise 5
+
+commit ed2a7fab48663f1849e429ed78de1975032f05e4
+Author: Varma Cephas <varmac231@gmail.com>
+Date:   Thu Feb 27 15:33:10 2025 +0200
+
+    chore: Add solution for Part 1 exercise 4
+
+commit 1cadb571bb4133ef188e6b7d1cc8bd9a083de712
+Author: Varma Cephas <varmac231@gmail.com>
+Date:   Thu Feb 27 14:59:40 2025 +0200
+
+    chore: Add exercise 3 completed solution to README
+
+commit 094b580537aef68aa91235408bc1a75dda558078
+Author: Gym Ubutwari <gymubutwari@Ubutwaris-iMac-2.local>
+Date:   Wed Feb 26 11:31:25 2025 +0200
+
+    chore: Add forgotten fourth file to commit history
+
+commit 627e0c53c827b714a5c23bfd73db5d4805af851f
+Author: Gym Ubutwari <gymubutwari@Ubutwaris-iMac-2.local>
+Date:   Wed Feb 26 11:22:07 2025 +0200
+pop-os% git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+pop-os% git log
+commit 2e6adb319b8135aa5791a29d284eb738ef60e938 (HEAD -> main, origin/main, origin/HEAD)
+Author: Varma Cephas <varmac231@gmail.com>
+Date:   Thu Feb 27 16:19:19 2025 +0200
+
+    docs: Add solution for Part 1 exercise 7
+
+commit f3485dec9565f6962b6e0e88d4c4b97d276c6c38
+Author: Varma Cephas <varmac231@gmail.com>
+Date:   Thu Feb 27 16:03:35 2025 +0200
+
+    docs: Add solution for Part 1 exercise 6
+
+commit fb42e6ef4467f3779e41a61c1f9632065af4141d
+Author: Varma Cephas <varmac231@gmail.com>
+Date:   Thu Feb 27 15:29:50 2025 +0200
+
+    chore: Squashed Create fifth and sixth file
+    chore: Create fifth file
+    
+    chore: Create sixth file
+
+commit ecbfbca56e0b5cfe23bb4fb0fbe86167b5c06050
+Author: Varma Cephas <varmac231@gmail.com>
+Date:   Thu Feb 27 15:44:18 2025 +0200
+
+    docs: Add solution for Part 1 exercise 5
+
+commit ed2a7fab48663f1849e429ed78de1975032f05e4
+Author: Varma Cephas <varmac231@gmail.com>
+Date:   Thu Feb 27 15:33:10 2025 +0200
+
+    chore: Add solution for Part 1 exercise 4
+
+commit 1cadb571bb4133ef188e6b7d1cc8bd9a083de712
+Author: Varma Cephas <varmac231@gmail.com>
+Date:   Thu Feb 27 14:59:40 2025 +0200
+
+    chore: Add exercise 3 completed solution to README
+
+commit 094b580537aef68aa91235408bc1a75dda558078
+Author: Gym Ubutwari <gymubutwari@Ubutwaris-iMac-2.local>
+Date:   Wed Feb 26 11:31:25 2025 +0200
+
+    chore: Add forgotten fourth file to commit history
+
+commit 627e0c53c827b714a5c23bfd73db5d4805af851f
+Author: Gym Ubutwari <gymubutwari@Ubutwaris-iMac-2.local>
+Date:   Wed Feb 26 11:22:07 2025 +0200
+
+    chore: Squashed "Create second file" commit into "Create initial file" commit for a cleaner history. -- patch contents already upstream
+
+commit 6c787d26b93c5059da51ce6a6cc3c56cb4e1d42c
+Author: Gym Ubutwari <gymubutwari@Ubutwaris-iMac-2.local>
+Date:   Wed Feb 26 11:22:07 2025 +0200
+pop-os% git cherry-pick 44df4661da39e1c11f37afb2c0e444745283cc34
+[main af2c733] feat: Implemented test 5
+ Date: Thu Feb 27 16:28:32 2025 +0200
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test7.md
+pop-os% git log
+commit af2c7338606d275569efa29bbd52a227d2cb59cf (HEAD -> main)
+Author: Varma Cephas <varmac231@gmail.com>
+Date:   Thu Feb 27 16:28:32 2025 +0200
+
+    feat: Implemented test 5
+
+commit 2e6adb319b8135aa5791a29d284eb738ef60e938 (origin/main, origin/HEAD)
+Author: Varma Cephas <varmac231@gmail.com>
+Date:   Thu Feb 27 16:19:19 2025 +0200
+
+    docs: Add solution for Part 1 exercise 7
+
+commit f3485dec9565f6962b6e0e88d4c4b97d276c6c38
+Author: Varma Cephas <varmac231@gmail.com>
+Date:   Thu Feb 27 16:03:35 2025 +0200
+
+    docs: Add solution for Part 1 exercise 6
+
+commit fb42e6ef4467f3779e41a61c1f9632065af4141d
+Author: Varma Cephas <varmac231@gmail.com>
+Date:   Thu Feb 27 15:29:50 2025 +0200
+
+    chore: Squashed Create fifth and sixth file
+    chore: Create fifth file
+    
+    chore: Create sixth file
+
+commit ecbfbca56e0b5cfe23bb4fb0fbe86167b5c06050
+Author: Varma Cephas <varmac231@gmail.com>
+Date:   Thu Feb 27 15:44:18 2025 +0200
+
+    docs: Add solution for Part 1 exercise 5
+
+commit ed2a7fab48663f1849e429ed78de1975032f05e4
+Author: Varma Cephas <varmac231@gmail.com>
+Date:   Thu Feb 27 15:33:10 2025 +0200
+
+    chore: Add solution for Part 1 exercise 4
+
+commit 1cadb571bb4133ef188e6b7d1cc8bd9a083de712
+Author: Varma Cephas <varmac231@gmail.com>
+Date:   Thu Feb 27 14:59:40 2025 +0200
+
+    chore: Add exercise 3 completed solution to README
+
+commit 094b580537aef68aa91235408bc1a75dda558078
+Author: Gym Ubutwari <gymubutwari@Ubutwaris-iMac-2.local>
+Date:   Wed Feb 26 11:31:25 2025 +0200
+
+    chore: Add forgotten fourth file to commit history
+
+commit 627e0c53c827b714a5c23bfd73db5d4805af851f
+Author: Gym Ubutwari <gymubutwari@Ubutwaris-iMac-2.local>
+Date:   Wed Feb 26 11:22:07 2025 +0200
+```
