@@ -627,3 +627,14 @@ with the above information on commit messages, hashes, pointers and more. with a
 pop-os% git checkout -b ft/new-feature
 Switched to a new branch 'ft/new-feature'
 ```
+
+### Exercise 2
+```bash
+pop-os% git checkout ft/new-feature 
+Switched to branch 'ft/new-feature'
+pop-os% nano feature.txt
+pop-os% git add feature.txt; git commit -m "feat: Implemented core functionality for new feature" 
+[ft/new-feature 0e62d47] feat: Implemented core functionality for new feature
+ 1 file changed, 1 insertion(+)
+ create mode 100644 feature.txt
+```
