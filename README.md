@@ -506,3 +506,25 @@ commit 627e0c53c827b714a5c23bfd73db5d4805af851f
 Author: Gym Ubutwari <gymubutwari@Ubutwaris-iMac-2.local>
 Date:   Wed Feb 26 11:22:07 2025 +0200
 ```
+
+### Exercise 9
+
+```bash
+pop-os% git log --all --decorate --oneline --graph
+* 8d4e590 (HEAD -> main, origin/main, origin/HEAD) docs: Add solution for Part 1 exercise 8
+* af2c733 feat: Implemented test 5
+| * 44df466 (ft/branch) feat: Implemented test 5
+|/  
+* 2e6adb3 docs: Add solution for Part 1 exercise 7
+* f3485de docs: Add solution for Part 1 exercise 6
+* fb42e6e chore: Squashed Create fifth and sixth file chore: Create fifth file
+* ecbfbca docs: Add solution for Part 1 exercise 5
+* ed2a7fa chore: Add solution for Part 1 exercise 4
+* 1cadb57 chore: Add exercise 3 completed solution to README
+* 094b580 chore: Add forgotten fourth file to commit history
+* 627e0c5 chore: Squashed "Create second file" commit into "Create initial file" commit for a cleaner history. -- patch contents already upstream
+* 6c787d2 chore: Create initial file
+* 4dbf45d chore: Add exercise 2 solution
+* 7baad55 chore: add log for exercise 1
+* 470d6fc Initial commit
+```
