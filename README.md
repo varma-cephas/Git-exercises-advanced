@@ -161,3 +161,31 @@ pop-os% git rebase -i HEAD~3
  create mode 100644 test6.md
 Successfully rebased and updated refs/heads/main.
 ```
+
+### Exercise 6
+
+```bash
+pop-os% touch unwanted.txt
+pop-os% git add unwanted.txt; git commit -m "chore: Unwanted commit"
+[main a95b60a] chore: Unwanted commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 unwanted.txt
+pop-os% git rebase -i HEAD~
+error: nothing to do
+pop-os% git rebase -i HEAD~
+error: nothing to do
+pop-os% git rebase -i HEAD~2
+Successfully rebased and updated refs/heads/main.
+pop-os% git log
+commit 8b487ecb5d6b5a068f75621d0f7a5f8c76e42c12 (HEAD -> main, origin/main, origin/HEAD)
+Author: Varma Cephas <varmac231@gmail.com>
+Date:   Thu Feb 27 15:44:18 2025 +0200
+
+    docs: Add solution for Part 1 exercise 5
+
+commit 6dfab1be514ddefe5bfca6c129402ef537c79fee
+Author: Varma Cephas <varmac231@gmail.com>
+Date:   Thu Feb 27 15:33:10 2025 +0200
+
+    chore: Add solution for Part 1 exercise 4
+```
