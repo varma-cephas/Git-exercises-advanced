@@ -149,3 +149,15 @@ pop-os% git add test6.md; git commit -m "chore: Create sixth file"
 pop-os% git rebase --continue
 Successfully rebased and updated refs/heads/main.
 ```
+
+### Exercise 5
+
+```bash
+pop-os% git rebase -i HEAD~3
+[detached HEAD de78864] chore: Squashed Create fifth and sixth file chore: Create fifth file
+ Date: Thu Feb 27 15:29:50 2025 +0200
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test5.md
+ create mode 100644 test6.md
+Successfully rebased and updated refs/heads/main.
+```
