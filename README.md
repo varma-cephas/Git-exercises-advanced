@@ -99,3 +99,53 @@ pop-os% git rebase -i HEAD~4
  create mode 100644 test2.md
 Successfully rebased and updated refs/heads/main.
 ```
+
+### Exercise 4
+
+```bash
+pop-os% git rebase -i HEAD~
+Stopped at 3f1ef2b...  chore: Create fifth and sixth file
+You can amend the commit now, with
+
+  git commit --amend 
+
+Once you are satisfied with your changes, run
+
+  git rebase --continue
+pop-os% git status
+interactive rebase in progress; onto 1cadb57
+Last command done (1 command done):
+   edit 3f1ef2b chore: Create fifth and sixth file
+No commands remaining.
+You are currently editing a commit while rebasing branch 'main' on '1cadb57'.
+  (use "git commit --amend" to amend the current commit)
+  (use "git rebase --continue" once you are satisfied with your changes)
+
+nothing to commit, working tree clean
+pop-os% git reset HEAD~
+pop-os% git status
+interactive rebase in progress; onto 1cadb57
+Last command done (1 command done):
+   edit 3f1ef2b chore: Create fifth and sixth file
+No commands remaining.
+You are currently editing a commit while rebasing branch 'main' on '1cadb57'.
+  (use "git commit --amend" to amend the current commit)
+  (use "git rebase --continue" once you are satisfied with your changes)
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	test5.md
+	test6.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+pop-os% git add test5.md; git commit -m "chore: Create fifth file"
+[detached HEAD 7fb3233] chore: Create fifth file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test5.md
+pop-os% git add test6.md; git commit -m "chore: Create sixth file"
+[detached HEAD cdeffa3] chore: Create sixth file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 test6.md
+pop-os% git rebase --continue
+Successfully rebased and updated refs/heads/main.
+```
