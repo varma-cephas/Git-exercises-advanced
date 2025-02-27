@@ -659,3 +659,22 @@ pop-os% git rebase -i HEAD~
  create mode 100644 readme.txt
 Successfully rebased and updated refs/heads/main.
 ```
+
+### Exercise 4
+
+```bash
+git push origin ft/new-feature 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 314 bytes | 314.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/new-feature' on GitHub by visiting:
+remote:      https://github.com/varma-cephas/Git-exercises-advanced/pull/new/ft/new-feature
+remote: 
+To github.com:varma-cephas/Git-exercises-advanced.git
+ * [new branch]      ft/new-feature -> ft/new-feature
+```
