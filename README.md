@@ -794,3 +794,24 @@ Turn off this advice by setting config variable advice.detachedHead to false
 
 HEAD is now at 621ad40 chore: Updated project readme
 ```
+
+
+## Part 3
+
+
+### Exercise 1
+
+```bash
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   test1.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git stash
+Saved working directory and index state WIP on main: c2143d3 docs: Add solution for Part 2 exercise 10
+```
