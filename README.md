@@ -733,3 +733,13 @@ Already up to date.
 gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git rebase  ft/new-branch-from-commit
 Successfully rebased and updated refs/heads/main.
 ```
+
+
+### Exercise 9
+
+```bash
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git branch -m ft/new-branch-from-commit ft/improved-branch-name
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git branch
+  ft/improved-branch-name
+* main
+```
