@@ -726,3 +726,10 @@ Switched to a new branch 'ft/new-branch-from-commit'
 gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git merge ft/new-branch-from-commit     
 Already up to date.
 ```
+
+### Exercise 8
+
+```bash
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git rebase  ft/new-branch-from-commit
+Successfully rebased and updated refs/heads/main.
+```
