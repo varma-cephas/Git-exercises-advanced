@@ -743,3 +743,54 @@ gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git branch
   ft/improved-branch-name
 * main
 ```
+
+### Exercise 10
+```bash
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git log --oneline      
+5771b78 (HEAD -> main, origin/main, origin/HEAD) docs: Add solution for Part 2 exercise 9
+cbea6bb docs: Add solution for Part 2 exercise 8
+158a648 docs: Add solution for Part 2 exercise 7
+c3ce2bd docs: Add solution for Part 2 exercise 6
+987a5a7 docs: Add solution for Part 2 exercise 5
+4e793bd docs: Add solution for Part 2 exercise 4
+c2f687e docs: Add solution for Part 2 exercise 3
+621ad40 chore: Updated project readme
+7c85a7e docs: Add solution for Part 2 exercise 2
+fbaeba7 docs: Add solution for Part 2 exercise 1
+0e62d47 (origin/ft/new-feature, ft/improved-branch-name) feat: Implemented core functionality for new feature
+baf31b4 docs: Add solution for Part 1 exercise 10
+3445457 docs: Add solution for Part 1 exercise 9
+8d4e590 docs: Add solution for Part 1 exercise 8
+af2c733 feat: Implemented test 5
+2e6adb3 docs: Add solution for Part 1 exercise 7
+f3485de docs: Add solution for Part 1 exercise 6
+fb42e6e chore: Squashed Create fifth and sixth file chore: Create fifth file
+ecbfbca docs: Add solution for Part 1 exercise 5
+ed2a7fa chore: Add solution for Part 1 exercise 4
+1cadb57 chore: Add exercise 3 completed solution to README
+094b580 chore: Add forgotten fourth file to commit history
+627e0c5 chore: Squashed "Create second file" commit into "Create initial file" commit for a cleaner history. -- patch contents already upstream
+6c787d2 chore: Create initial file
+4dbf45d chore: Add exercise 2 solution
+7baad55 chore: add log for exercise 1
+470d6fc Initial commit
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git checkout 621ad40
+Note: switching to '621ad40'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 621ad40 chore: Updated project readme
+```
