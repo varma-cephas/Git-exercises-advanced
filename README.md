@@ -989,3 +989,20 @@ Turn off this advice by setting config variable advice.detachedHead to false
 HEAD is now at 9fbd80e chore: Add description to feature.txt file on main branch
 gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % 
 ```
+
+### Exercise 6
+
+```bash
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % nano .gitignore
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	.gitignore
+
+nothing added to commit but untracked files present (use "git add" to track)
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % cat .gitignore 
+/tmp
+```
