@@ -685,3 +685,37 @@ To github.com:varma-cephas/Git-exercises-advanced.git
 pop-os% git branch -d ft/new-feature
 Deleted branch ft/new-feature (was 0e62d47).
 ```
+
+### Exercise 6
+
+```bash
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git log --oneline --graph
+* bac4f8b (HEAD -> main, origin/main, origin/HEAD) docs: Add solution for Part 2 exercise 5
+*   14adf7f chore: Merge pull request #1 from varma-cephas/ft/new-feature
+|\  
+| * 0e62d47 (origin/ft/new-feature) feat: Implemented core functionality for new feature
+* | 0891909 docs: Add solution for Part 2 exercise 4
+* | 0384eb8 docs: Add solution for Part 2 exercise 3
+* | 692a5bd chore: Updated project readme
+* | 2062c51 docs: Add solution for Part 2 exercise 2
+* | 00095e4 docs: Add solution for Part 2 exercise 1
+|/  
+* baf31b4 docs: Add solution for Part 1 exercise 10
+* 3445457 docs: Add solution for Part 1 exercise 9
+* 8d4e590 docs: Add solution for Part 1 exercise 8
+* af2c733 feat: Implemented test 5
+* 2e6adb3 docs: Add solution for Part 1 exercise 7
+* f3485de docs: Add solution for Part 1 exercise 6
+* fb42e6e chore: Squashed Create fifth and sixth file chore: Create fifth file
+* ecbfbca docs: Add solution for Part 1 exercise 5
+* ed2a7fa chore: Add solution for Part 1 exercise 4
+* 1cadb57 chore: Add exercise 3 completed solution to README
+* 094b580 chore: Add forgotten fourth file to commit history
+* 627e0c5 chore: Squashed "Create second file" commit into "Create initial file" commit for a cleaner history. -- patch contents already upstream
+* 6c787d2 chore: Create initial file
+* 4dbf45d chore: Add exercise 2 solution
+* 7baad55 chore: add log for exercise 1
+* 470d6fc Initial commit
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git checkout -b  ft/new-branch-from-commit 0e62d47 
+Switched to a new branch 'ft/new-branch-from-commit'
+```
