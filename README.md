@@ -1020,7 +1020,7 @@ v1.0
 ```bash
 gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git tag -d v1.0
 Deleted tag 'v1.0' (was 1b7fbff)
-``
+```
 
 ### Exercise 9
 
