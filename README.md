@@ -1006,3 +1006,18 @@ nothing added to commit but untracked files present (use "git add" to track)
 gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % cat .gitignore 
 /tmp
 ```
+
+### Exercise 7
+
+```bash
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git tag v1.0
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git tag        
+v1.0
+```
+
+### Exercise 8
+
+```bash
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git tag -d v1.0
+Deleted tag 'v1.0' (was 1b7fbff)
+``
