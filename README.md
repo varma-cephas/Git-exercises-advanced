@@ -1021,3 +1021,19 @@ v1.0
 gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git tag -d v1.0
 Deleted tag 'v1.0' (was 1b7fbff)
 ``
+
+### Exercise 9
+
+```bash
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git push origin main
+Enter passphrase for key '/Users/gymubutwari/.ssh/id_rsa': 
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 406 bytes | 406.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To github.com:varma-cephas/Git-exercises-advanced.git
+   1b7fbff..7d8af99  main -> main
+```
