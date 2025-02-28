@@ -964,3 +964,28 @@ See 'git mergetool --tool-help' or 'git help config' for more details.
 opendiff tortoisemerge emerge vimdiff nvimdiff
 No files need merging
 ```
+
+### Exercise 5
+
+```bash
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git checkout 9fbd80e
+Note: switching to '9fbd80e'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 9fbd80e chore: Add description to feature.txt file on main branch
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % 
+```
