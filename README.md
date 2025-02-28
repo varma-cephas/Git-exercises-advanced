@@ -831,3 +831,124 @@ Changes not staged for commit:
 no changes added to commit (use "git add" and/or "git commit -a")
 Dropped refs/stash@{0} (80f25dc0d4ce86ce0ec84e1cd471b84b9fd5648e)
 ```
+
+### Exercise 3
+
+```bash
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git branch
+  ft/improved-branch-name
+* main
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git checkout ft/improved-branch-name
+Switched to branch 'ft/improved-branch-name'
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % ls
+README.md	feature.txt	test1.md	test2.md	test3.md	test4.md	test5.md	test6.md	test7.md
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % nano feature.txt 
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git add feature.txt; git commit -m "chore: Add description to feature.txt file"
+[ft/improved-branch-name 726dc88] chore: Add description to feature.txt file
+ Committer: Gym Ubutwari <gymubutwari@Ubutwaris-iMac-2.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % nano feature.txt 
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git add feature.txt; git commit -m "chore: Add description to feature.txt file on main branch"
+[main 9fbd80e] chore: Add description to feature.txt file on main branch
+ Committer: Gym Ubutwari <gymubutwari@Ubutwaris-iMac-2.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git merge ft/improved-branch-name
+Auto-merging feature.txt
+CONFLICT (content): Merge conflict in feature.txt
+Automatic merge failed; fix conflicts and then commit the result.
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+	both modified:   feature.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % nano feature.txt 
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+	both modified:   feature.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git commit          
+U	feature.txt
+error: Committing is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+	both modified:   feature.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git add feature.txt 
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git commit 
+[main 0b08396] Merge branch 'ft/improved-branch-name'
+ Committer: Gym Ubutwari <gymubutwari@Ubutwaris-iMac-2.local>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly:
+
+    git config --global user.name "Your Name"
+    git config --global user.email you@example.com
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git status
+On branch main
+Your branch is ahead of 'origin/main' by 3 commits.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+```
