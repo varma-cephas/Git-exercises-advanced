@@ -719,3 +719,10 @@ gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git log --oneline --graph
 gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git checkout -b  ft/new-branch-from-commit 0e62d47 
 Switched to a new branch 'ft/new-branch-from-commit'
 ```
+
+### Exercise 7
+
+```bash
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git merge ft/new-branch-from-commit     
+Already up to date.
+```
