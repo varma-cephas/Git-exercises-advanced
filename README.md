@@ -1037,3 +1037,22 @@ remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To github.com:varma-cephas/Git-exercises-advanced.git
    1b7fbff..7d8af99  main -> main
 ```
+
+### Exercise 10
+
+```bash
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git pull origin main
+Enter passphrase for key '/Users/gymubutwari/.ssh/id_rsa': 
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 966 bytes | 193.00 KiB/s, done.
+From github.com:varma-cephas/Git-exercises-advanced
+ * branch            main       -> FETCH_HEAD
+   729494f..e50e41d  main       -> origin/main
+Updating 729494f..e50e41d
+Fast-forward
+ README.md | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+```
