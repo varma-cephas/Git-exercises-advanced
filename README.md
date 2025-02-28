@@ -952,3 +952,15 @@ Your branch is ahead of 'origin/main' by 3 commits.
 
 nothing to commit, working tree clean
 ```
+
+### Exercise 4
+
+```bash
+gymubutwari@Ubutwaris-iMac-2 Git-exercises-advanced % git mergetool
+
+This message is displayed because 'merge.tool' is not configured.
+See 'git mergetool --tool-help' or 'git help config' for more details.
+'git mergetool' will now attempt to use one of the following tools:
+opendiff tortoisemerge emerge vimdiff nvimdiff
+No files need merging
+```
